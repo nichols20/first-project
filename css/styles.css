@@ -9,6 +9,7 @@ html {
   --color-accent: #ff3400;
   --color-heading: #1b0760;
   --color-body: #918ca4;
+  --color-body-darker: #5c5577;
 }
 
 body {
@@ -389,4 +390,34 @@ a {
 
 .media__image {
   margin-top: 1rem;
+}
+
+/* quote */
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-darker);
+  line-height: 3.5rem;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+
+.quote__text::after {
+  content: close-quote;
+}
+
+.quote_name {
+  margin-bottom: 0;
+  padding-top: 14.3px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.media__body .quote_company {
+  font-size: 1.6rem;
+  opacity: 70%;
+  font-style: normal;
 }
