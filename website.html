@@ -14,10 +14,22 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <span class="icon-container">
-      <svg class="icon icon--primary">
-        <use xlink:href="images/sprite.svg#wordpress"></use>
-      </svg>
+    <span class="input-container">
+      <input
+        type="text"
+        class="domain"
+        placeholder="Enter domain name here..."
+      />
+      <button class="btn search-button">
+        <svg id="icon-search">
+          <use xlink:href="images/sprite.svg#search"></use>
+        </svg>
+        search
+      </button>
     </span>
+
+    <button class="btn btn--primary">buy now</button>
+
+    <button class="btn btn--secondary">get started</button>
   </body>
 </html>
