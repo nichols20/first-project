@@ -157,8 +157,16 @@ a {
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: white;
 }
 
 .icon-container {
@@ -169,6 +177,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 #icon-search {
@@ -398,6 +410,7 @@ a {
   font-style: italic;
   color: var(--color-body-darker);
   line-height: 3.5rem;
+  margin: 0;
 }
 
 .quote__text::before {
@@ -422,6 +435,12 @@ a {
   font-style: normal;
 }
 
+@media screen and (min-width: 768px) {
+  .quote {
+    margin-left: 40px;
+  }
+}
+
 /* grid */
 .grid {
   display: grid;
@@ -435,5 +454,30 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* testimonial */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__img {
+  position: relative;
+}
+
+.testimonial__img > img {
+  width: 100%;
+}
+
+.testimonial__img > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote .quote_name {
+    font-size: 2rem;
   }
 }
