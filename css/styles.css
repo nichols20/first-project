@@ -547,7 +547,7 @@ a {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -595,4 +595,65 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* nav */
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+  color: #7b858b;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 50%;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px #666;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
+  }
+  .nav__item {
+    border: 0;
+  }
 }
