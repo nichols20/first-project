@@ -301,9 +301,13 @@ a {
 
 /* Cards */
 .card {
+  margin-bottom: 6rem;
   border-radius: 9px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card__header,
@@ -314,7 +318,7 @@ a {
 }
 
 .card--primary .card__header {
-  background-color: var(--color-heading);
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -327,11 +331,22 @@ a {
   background: #02cdf1;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    margin: 0 auto;
+    transition: transform 0.5s;
+  }
+
+  .card:hover {
+    transform: scale(1.4);
+  }
+}
+
 /* plans */
 .plan {
   width: 88%;
   padding-top: 3rem;
-  padding-left: 2.2rem;
+  margin: 0 auto;
 }
 .plan__name {
   color: #fff;
@@ -378,8 +393,10 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .plan {
-    width: 20%;
-    padding-left: 26rem;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    display: flex;
   }
 
   .plan__name {
@@ -400,6 +417,10 @@ a {
 
   .plan--popular .card__header::before {
     width: 31px;
+  }
+
+  .plan--popular {
+    transform: scale(1.2);
   }
 }
 
