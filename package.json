@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/nichols20/first-project#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.5"
   }
 }
