@@ -59,6 +59,14 @@ h3 {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  p,
+  body {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+}
+
 /*links*/
 a {
   text-decoration: none;
@@ -344,7 +352,7 @@ a {
   }
 
   .card:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }
 
@@ -401,8 +409,9 @@ a {
   .plan {
     width: 80%;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding-top: 2rem;
     display: flex;
+    margin-bottom: 20rem;
   }
 
   .plan__name {
@@ -426,7 +435,7 @@ a {
   }
 
   .plan--popular {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 
@@ -594,6 +603,7 @@ a {
   opacity: 0;
   transition: all 0.4s;
   color: rgb(156, 156, 156);
+  list-style: none;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -757,6 +767,7 @@ a {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -837,6 +848,11 @@ a {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .feature-pic {
+    max-width: 600px;
+  }
+}
 /* Showcase Block*/
 .showcase {
   padding-bottom: 50rem;
@@ -915,10 +931,12 @@ a {
 /* footer */
 .footer {
   background-color: #232323;
+  padding-bottom: 0;
 }
 
 .footer__section {
   padding: 2rem;
+  padding-bottom: 0;
   border-bottom: 1px solid #393939;
 }
 
